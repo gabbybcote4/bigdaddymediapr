@@ -30,19 +30,9 @@ export default function Hero(){
         </div>
   <motion.div initial={{ x: 40, opacity:0 }} animate={{ x:0, opacity:1 }} transition={{ duration:0.6 }} className="hidden md:block">
     <div className="rounded-2xl overflow-hidden glow-accent card-bg relative">
-      {/* <video
-        src="/videos/first.mp4"
-        className="w-full h-84 object-cover video-blend"
-        autoPlay
-        loop
-        muted
-        playsInline
-      /> */}
-  {/* Color overlay to tint and blend the video into the page palette */}
-  <div className="video-overlay" aria-hidden />
-      {/* Vignette for depth */}
+      <img src="/images/image-06.png" alt="Workspace" className="w-full h-84 object-cover" />
+      <div className="video-overlay" aria-hidden />
       <div className="video-vignette" aria-hidden />
-      {/* Soft outer glow */}
       <div className="video-glow" aria-hidden />
     </div>
   </motion.div>

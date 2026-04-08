@@ -1,6 +1,5 @@
 ﻿import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import BRoll from './components/BRoll'
 import Services from './components/Services'
 import Process from './components/Process'
 import Pricing from './components/Pricing'
@@ -9,7 +8,6 @@ import WhyUs from './components/WhyUs'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
 import WhatWeDo from './components/WhatWeDo'
-import Results from './components/Results'
 import Portfolio from './components/Portfolio'
 import ScrollTop from './components/ScrollTop'
 
@@ -20,9 +18,7 @@ export default function App(){
   <main id="main" role="main" className="overflow-x-hidden">
         <div className="max-w-6xl mx-auto px-6">
           <Hero />
-          <BRoll />
           <WhatWeDo />
-          <Results />
           <Portfolio />
           <section id="problem" className="py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">

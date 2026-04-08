@@ -20,6 +20,9 @@ export default function CaseStudy(){
           </div>
 
           <div className="rounded-lg p-6 card-gradient card-border">
+            <div className="mb-4 overflow-hidden rounded-md">
+              <img src="/images/image-07.png" alt="Case visual" className="w-full h-56 object-cover" />
+            </div>
             <h4 className="font-semibold">Approach</h4>
             <p className="mt-2 text-muted-dark">{CASE_STUDY.approach}</p>
             <h4 className="mt-6 font-semibold">Result</h4>

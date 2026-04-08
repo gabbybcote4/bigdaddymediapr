@@ -96,8 +96,7 @@ const EXAMPLES = [
               <div className="font-semibold mt-3">Case study</div>
               <p className="mt-1">{active.caseStudy}</p>
 
-              <div className="font-semibold mt-3">Results</div>
-              <ul className="mt-1 list-disc list-inside">{active.results.map((r: string) => (<li key={r}>{r}</li>))}</ul>
+              {/* Results removed per request */}
             </div>
           </div>
         </div>
@@ -108,15 +107,18 @@ const EXAMPLES = [
 
   // split the original component into an inner component that accepts an open handler
   function PortfolioInner({ onOpen }: { onOpen: (ex: any) => void }){
+    const THUMBS = ['image-01.png','image-02.png','image-03.png','image-04.png','image-05.png']
     return (
-      <section id="portfolio" className="py-16 border-t border-white/6">
+      <section id="case-studies" className="py-16 border-t border-white/6">
         <div className="max-w-6xl mx-auto px-6">
-  <h2 className="text-3xl font-bold bauhaus">Portfolio</h2>
-    <p className="mt-3 text-muted-dark max-w-2xl">Short looping demos and campaign highlights. Click any entry for details.</p>
-
+  <h2 className="text-3xl font-bold bauhaus">Case Studies</h2>
+    <p className="mt-3 text-muted-dark max-w-2xl">Selected case studies and campaign highlights. Click any entry for details.</p>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {EXAMPLES.map(ex => (
                 <article key={ex.brand} className="p-6 card-bg card-border">
+                <div className="overflow-hidden rounded-md">
+                  <img src={`/images/${THUMBS[EXAMPLES.indexOf(ex) % THUMBS.length]}`} alt={`${ex.brand} visual`} className="w-full h-44 object-cover" />
+                </div>
                 <div className="text-candy text-sm font-semibold">{ex.category} — {ex.industry}</div>
                 <h4 className="text-xl font-bold mt-2">{ex.brand}</h4>
                 <div className="mt-2 text-muted-dark">{ex.project}</div>
