@@ -116,9 +116,7 @@ const EXAMPLES = [
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {EXAMPLES.map(ex => (
                 <article key={ex.brand} className="p-6 card-bg card-border">
-                <div className="overflow-hidden rounded-md">
-                  <img src={`/images/${THUMBS[EXAMPLES.indexOf(ex) % THUMBS.length]}`} alt={`${ex.brand} visual`} className="w-full h-44 object-cover" />
-                </div>
+                {/* images removed from case study cards per request */}
                 <div className="text-candy text-sm font-semibold">{ex.category} — {ex.industry}</div>
                 <h4 className="text-xl font-bold mt-2">{ex.brand}</h4>
                 <div className="mt-2 text-muted-dark">{ex.project}</div>

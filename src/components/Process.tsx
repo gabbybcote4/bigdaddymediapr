@@ -9,22 +9,30 @@ export default function Process(){
   return (
     <section id="process" className="py-16 border-t border-white/6">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="flex items-center gap-3">
-          <h2 className="bauhaus display-subtitle text-3xl font-bold h-condensed">How it works</h2>
-          <svg className="w-6 h-6 text-candy" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-            <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.5" className="circle-outline" />
-          </svg>
-        </div>
-
-  <p className="mt-3 text-muted-dark max-w-2xl">A simple, repeatable system: strategy, content, distribution, and continuous optimization.</p>
-
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-4 gap-6">
-          {ITEMS.map((it, idx) => (
-            <div key={it.title} className="p-6 card-bg card-border">
-              <div className="text-[var(--candy)] font-bold">{it.title}</div>
-              <div className="mt-2 text-muted-dark">{it.body}</div>
+        <div className="grid md:grid-cols-2 gap-6 items-start">
+          <div>
+            <div className="flex items-center gap-3">
+              <h2 className="bauhaus display-subtitle text-3xl font-bold h-condensed">How it works</h2>
+              <svg className="w-6 h-6 text-candy" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.5" className="circle-outline" />
+              </svg>
             </div>
-          ))}
+
+            <p className="mt-3 text-muted-dark max-w-2xl">A simple, repeatable system: strategy, content, distribution, and continuous optimization.</p>
+
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+              {ITEMS.map((it, idx) => (
+                <div key={it.title} className="p-6 card-bg card-border">
+                  <div className="text-[var(--candy)] font-bold">{it.title}</div>
+                  <div className="mt-2 text-muted-dark">{it.body}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="overflow-hidden rounded-md">
+            <img src="/images/image-05.png" alt="How it works visual" className="w-full h-full object-cover rounded-md" />
+          </div>
         </div>
       </div>
     </section>

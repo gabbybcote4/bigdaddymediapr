@@ -12,12 +12,12 @@ export default function WhyUs(){
 
         <div className="mt-4 grid gap-8 md:grid-cols-2">
           <div className="max-w-3xl">
-            <h4 className="font-semibold">Our Story</h4>
+            {/* <h4 className="font-semibold">Our Story</h4>
             <p className="mt-2 text-muted-dark">Big Daddy Media & PR was founded by Celine after realizing most brands aren’t struggling with content, they’re struggling to actually connect with people. Because posting more doesn’t fix anything if no one cares or converts.</p>
 
             <p className="mt-2 text-muted-dark">After years of working behind the scenes in social media, creator marketing, and brand strategy, we saw the same pattern over and over. Brands were playing it safe, blending in, and wondering why nothing was converting.</p>
 
-            <p className="mt-2 text-muted-dark">Big Daddy was created to change that. We exist to help brands step outside the box, take creative risks, and show up in a way that actually gets attention. Through creator-driven content, strategic partnerships, and bold storytelling, we turn passive audiences into engaged communities.</p>
+            <p className="mt-2 text-muted-dark">Big Daddy was created to change that. We exist to help brands step outside the box, take creative risks, and show up in a way that actually gets attention. Through creator-driven content, strategic partnerships, and bold storytelling, we turn passive audiences into engaged communities.</p> */}
 
             <div className="inner-divider mt-6" />
 
@@ -75,7 +75,7 @@ export default function WhyUs(){
             <p className="mt-2 text-muted-dark">Once we receive your application, we’ll review it carefully. If you qualify and we see a mutual fit, we’ll invite you to book a free discovery call where we’ll dive deeper into your goals and provide you with a tailor-made proposal. We only take on a limited number of clients at a time to maintain high quality, so please apply only if you’re serious and ready to take action.</p>
           </div>
 
-          <aside className="max-w-md">
+          {/* <aside className="max-w-md">
             <div className="card-bg card-border p-5">
               <h5 className="font-semibold">What we offer</h5>
               <ul className="mt-3 list-disc list-inside text-muted-dark space-y-2">
@@ -87,7 +87,7 @@ export default function WhyUs(){
                 <li>Campaign Strategy</li>
               </ul>
             </div>
-          </aside>
+          </aside> */}
         </div>
       </div>
     </section>

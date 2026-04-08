@@ -33,6 +33,7 @@ export default function App(){
               </ul>
             </div>
             <div className="card-bg p-8 rounded-lg">
+              <img src="/images/image-04.png" alt="Problems visual" className="w-full h-44 object-cover rounded-md mb-4" />
               <h4 className="text-xl font-semibold">Our answer</h4>
               <p className="mt-4 text-muted-dark">A creative + operations playbook: tight strategy, repeatable content systems, performance measurement, and dedicated campaign management.</p>
               <div className="mt-6 flex gap-4">

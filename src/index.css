@@ -130,6 +130,20 @@ subtitle-large{
   .display-subtitle{ font-size: 2.6rem }
 }
 
+/* Center layout: ensure sections and grid items are centered for consistent layout */
+section > .max-w-6xl, main > .max-w-6xl {
+  text-align: center;
+}
+
+/* Center direct children of common grids so cards align centrally */
+section .grid > * {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ensure buttons and small control groups remain centered */
+.center-controls { display:inline-flex; gap:0.5rem; align-items:center }
+
 /* B-roll card styles */
 .broll-card{ 
   background: linear-gradient(180deg, rgba(40,40,40,0.02), rgba(40,40,40,0.01)); 
