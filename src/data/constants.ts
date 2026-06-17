@@ -5,6 +5,50 @@
   { id: 'pr', title: 'creative consultation and coaching & Launch Campaigns', tagline: 'Attention is easy. Momentum is not.', desc: 'We build launch strategies that create noise, traction, and sustained visibility. From seeding to coverage, everything is designed to carry past day one.' }
 ]
 
+export const SERVICES_CATEGORIES = [
+  {
+    category: 'Creative',
+    items: [
+      'Graphic design',
+      'Website design',
+      'Brand strategy & identity',
+      'Photography',
+      'Videography',
+      'Print & packaging'
+    ]
+  },
+  {
+    category: 'Social Media',
+    items: [
+      'Social media strategy',
+      'Content production & scheduling',
+      'Community management',
+      'Influencer & creator partnerships',
+      'Creator seeding & campaigns'
+    ]
+  },
+  {
+    category: 'Marketing',
+    items: [
+      'Consulting & growth strategy',
+      'Paid media (ads + testing)',
+      'Email & CRM',
+      'SEO & discoverability',
+      'Performance analytics'
+    ]
+  },
+  {
+    category: 'Creative Consultation & Coaching',
+    items: [
+      'Launch strategy & planning',
+      'Messaging workshops',
+      'Media outreach & coverage',
+      'Team coaching & playbooks',
+      'Campaign post-mortems'
+    ]
+  }
+]
+
 export const PACKAGES = [
   { id: 'kitten', name: 'Kitten', price: '$900–$1,500/mo', summary: 'For brands testing content and getting started with UGC.', bullets: ['Intro strategy session', '6–8 short-form assets / month', 'Basic performance reporting'], ideal: 'Small brands and creators experimenting with UGC' },
   { id: 'rebel', name: 'Rebel', price: '$2,000–$3,200/mo', summary: 'For brands ready to grow and stay consistent.', bullets: ['Full content strategy', '15–25 assets / month', 'Creator outreach & seeding', 'Monthly reporting'], ideal: 'Growing brands building consistent social momentum' },
