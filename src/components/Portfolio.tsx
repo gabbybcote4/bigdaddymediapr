@@ -93,7 +93,7 @@ const EXAMPLES = [
               <div className="font-semibold mt-3">Content to mock</div>
               <ul className="mt-1 list-disc list-inside">{active.content.map((c: string) => (<li key={c}>{c}</li>))}</ul>
 
-              <div className="font-semibold mt-3">Case study</div>
+              <div className="font-semibold mt-3">Project summary</div>
               <p className="mt-1">{active.caseStudy}</p>
 
               {/* Results removed per request */}
@@ -111,8 +111,8 @@ const EXAMPLES = [
     return (
       <section id="case-studies" className="py-16 border-t border-white/6">
         <div className="max-w-6xl mx-auto px-6">
-  <h2 className="text-3xl font-bold bauhaus">Case Studies</h2>
-    <p className="mt-3 text-muted-dark max-w-2xl">Selected case studies and campaign highlights. Click any entry for details.</p>
+  <h2 className="text-3xl font-bold bauhaus">Portfolio</h2>
+    <p className="mt-3 text-muted-dark max-w-2xl">Selected projects and campaign highlights. Click any entry for details.</p>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {EXAMPLES.map(ex => (
                 <article key={ex.brand} className="p-6 card-bg card-border">
@@ -126,7 +126,7 @@ const EXAMPLES = [
                         className="mt-4 inline-flex items-center gap-3 text-sm font-semibold text-white bg-[var(--candy)] hover:bg-[#ff364a] rounded-full py-2 px-4 shadow"
                         onClick={() => onOpen(ex)}
                       >
-                        View case details
+                        View details
                       </button>
                   </div>
               </article>

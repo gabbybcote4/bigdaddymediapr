@@ -12,6 +12,7 @@ export default function Hero(){
             Big Daddy Media & PR builds content that actually converts.
           </motion.h1>
           <motion.p initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{ delay:0.2 }} className="mt-6 text-muted-dark max-w-2xl">Strategy, content systems, influencer partnerships, and launch campaigns designed to grow brands—not just make them look good.</motion.p>
+          <motion.div initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{ delay:0.25 }} className="mt-3 text-[var(--coal)] font-semibold">we whip your marketing into shape</motion.div>
           <motion.div initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{ delay:0.4 }} className="mt-8 flex gap-4 justify-center lg:justify-start">
             <button onClick={()=>handleScroll('#contact')} className="px-6 py-3 bg-[var(--candy)] text-white rounded-md font-semibold shadow-md">Get Started</button>
             <button onClick={()=>handleScroll('#case')} className="px-6 py-3 border border-black/10 rounded-md text-[var(--coal)] hover-cherry hover-border-cherry">View Case Study</button>
