@@ -9,7 +9,7 @@ export default function Process(){
   return (
     <section id="process" className="py-16 border-t border-white/6">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-6 items-start">
+        <div className="grid items-center md:items-start md:grid-cols-2 gap-6">
           <div>
             <div className="flex items-center gap-3">
               <h2 className="bauhaus display-subtitle text-3xl font-bold h-condensed">How it works</h2>

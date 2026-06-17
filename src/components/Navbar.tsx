@@ -71,9 +71,9 @@ export default function Navbar(){
       <div className="px-6 py-4 flex flex-col gap-3 bg-[rgba(254,236,222,0.95)]">
         {links.map(l => (
           l.href && l.href.startsWith('/') ? (
-            <a key={l.href} href={l.href} className="text-left text-muted-dark hover-cherry py-2">{l.label}</a>
+            <a key={l.href} href={l.href} className="text-center text-muted-dark hover-cherry py-2">{l.label}</a>
           ) : (
-            <button key={l.href} onClick={() => scrollTo(l.href)} className="text-left text-muted-dark hover-cherry py-2">{l.label}</button>
+            <button key={l.href} onClick={() => scrollTo(l.href)} className="text-center text-muted-dark hover-cherry py-2">{l.label}</button>
           )
         ))}
         <button onClick={() => scrollTo('#pricing')} className="mt-2 px-4 py-2 bg-[var(--candy)] text-white rounded-md font-semibold">Packages</button>

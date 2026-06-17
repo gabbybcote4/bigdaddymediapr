@@ -13,7 +13,7 @@ export default function Footer(){
 
   return (
     <footer role="contentinfo" className="border-t border-white/6">
-      <div className=" mx-auto px-6 py-5 flex flex-col md:flex-row items-start justify-between">
+      <div className=" mx-auto px-6 py-5 flex flex-col md:flex-row items-center md:items-start justify-between">
         <div>
           <div className="text-candy font-bold bauhaus display-subtitle">Big Daddy Media & PR</div>
           <div className=" text-muted-dark text-sm"><a href="mailto:bigdaddymediapr@gmail.com" className="hover:underline">bigdaddymediapr@gmail.com</a></div>

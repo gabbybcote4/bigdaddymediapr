@@ -11,7 +11,7 @@ export default function CaseStudy(){
             <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.5" className="circle-outline" />
           </svg>
         </div>
-        <div className="mt-6 grid md:grid-cols-2 gap-8 items-start">
+        <div className="mt-6 grid items-center md:items-start md:grid-cols-2 gap-8">
           <div className="card-bg card-border rounded-lg p-6">
             <h4 className="font-semibold">Overview</h4>
             <p className="mt-2 text-muted-dark">{CASE_STUDY.overview}</p>

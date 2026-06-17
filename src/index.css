@@ -372,3 +372,33 @@ section .grid > * {
   width:100%; 
   display:block; 
 }
+
+/* Responsive center fixes for small viewports */
+@media (max-width: 767px) {
+  main, section, header, .max-w-6xl, .max-w-3xl, .card-bg, .card-gradient, .modal-bg {
+    text-align: center;
+  }
+
+  /* Make grid children centered and stack cleanly */
+  .grid {
+    display: grid;
+    place-items: center;
+  }
+
+  section .grid > *, .grid > * {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  img, .broll-thumb, .broll-card img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  /* Override Tailwind utility that left-aligns flex items to ensure centered stacking */
+  .items-start { align-items: center !important; }
+
+  .center-controls { justify-content: center; }
+}
